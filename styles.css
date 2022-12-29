@@ -1,0 +1,61 @@
+html{
+    overflow: hidden;
+}
+body{
+    margin: 0;
+}
+
+#mainBackground{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #8d0e19 , #280204);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#branchBox{
+    height: 30%;
+}
+#branch{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: left top;
+
+}
+
+#presentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 2;
+}
+#present{
+    width: 60%;
+    align-self: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    flex: 2;
+}
+
+#timerBox{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    order: 2;
+}
+
+
+/*
+#testBox{
+    background: linear-gradient(to right, red, orange, yellow, green, lightblue, blue, purple);
+    width: 100%;
+    height: 200px;
+    position: relative;
+    left: -100px;
+}*/
