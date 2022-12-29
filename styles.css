@@ -14,40 +14,64 @@ body{
     justify-content: start;
 }
 
+@media screen and (max-width: 1300px) {
+
+
+    #branchBox {
+        height: 30%;
+    }
+
+    #branch {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: left top;
+
+    }
+
+    #timerBox {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        order: 2;
+    }
+
+    #presentBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex: 2;
+    }
+
+    #present {
+        width: 60%;
+        align-self: center;
+    }
+
+
+
+
+}
+
 #branchBox{
     height: 30%;
 }
 #branch{
-    object-fit: cover;
+    object-fit: scale-down;
     width: 100%;
     height: 100%;
     object-position: left top;
-
 }
 
 #presentBox{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    flex: 2;
 }
 #present{
-    width: 60%;
-    align-self: center;
-}
-
-h1{
-    text-align: center;
-    color: white;
-    flex: 2;
-}
-
-#timerBox{
     display: flex;
-    justify-content: center;
-    flex: 1;
-    order: 2;
+    margin-bottom: 7%;
+    width: 20%;
 }
 
 
