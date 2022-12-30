@@ -1,8 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const endDate = new Date(2022, 11, 30,  new Date().getHours(), new Date().getMinutes(), new Date().getSeconds() + 10);
-    /*const endDate = new Date(2023, 0, 1,  11); */
+    const endDate = new Date(2022, 11, 31,  new Date().getHours(), new Date().getMinutes(), new Date().getSeconds() + 5);
+    // const endDate = new Date(2022, 11, 31,  0, 40);
 
     let TimerId = null;
 
@@ -37,11 +37,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function openPresent(){
         let presentElement = document.getElementById('present');
+        let presentBoxElement = document.getElementById('presentBox');
         presentElement.onclick = function congrats(){
-            presentElement.setAttribute('src', 'Images/presentLitOpened.png');
-            presentElement.style.cursor = 'default';
-            timerValue.textContent = 'С Новым Годом!';
+
+            // presentElement.style.cursor = 'default';
+            timerValue.textContent = 'Чичас...';
+            setTimeout(function() {
+                presentElement.setAttribute('src', 'Images/presentLitOpened.png');
+                timerValue.textContent = 'Нажимай!';
+                presentBoxElement.setAttribute('href', 'https://store.steampowered.com/app/632360/Risk_of_Rain_2/');
+                presentBoxElement.setAttribute('target', '_blank');
+            }, 1000);
+            setTimeout(function (){
+                timerValue.textContent = 'С Новым Годом!';
+            }, 2000)
         }
+
     }
 
     function lightPresent(){
