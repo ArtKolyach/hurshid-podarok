@@ -48,6 +48,13 @@ body{
         width: 60%;
         align-self: center;
     }
+    h1{
+        color: white;
+        font-family: Arial;
+        font-size: 7vh;
+        text-align: center;
+        justify-self: center;
+    }
 }
 
 @media screen and (min-width: 1301px) {
@@ -72,7 +79,23 @@ body{
         margin-bottom: 7%;
         width: 20%;
     }
+    #timerBox {
+        display: flex;
+        justify-content: center;
+        align-content: start;
+        flex: 1;
+        order: 2;
+    }
+    h1{
+        color: white;
+        font-family: Arial;
+        font-size: 4vw;
+        text-align: center;
+        margin: 0;
+     }
 }
+
+
 
 /*
 #testBox{
