@@ -1,8 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const endDate = new Date(2022, 11, 31,  new Date().getHours(), new Date().getMinutes(), new Date().getSeconds() + 5);
-    // const endDate = new Date(2022, 11, 31,  0, 40);
+    // const endDate = new Date(2022, 11, 31,  new Date().getHours(), new Date().getMinutes(), new Date().getSeconds() + 5);
+    const endDate = new Date(2023, 0, 1,  12);
 
     let TimerId = null;
 
